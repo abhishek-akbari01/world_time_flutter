@@ -13,7 +13,7 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
 
     data = data.isNotEmpty ? data : ModalRoute.of(context)?.settings.arguments as Map;
-    print(data);
+//    print(data);
     String bgImage = data['isDaytime'] ? 'day.png' : 'night.png';
     var bgColor =  data['isDaytime'] ? Colors.blue : Colors.indigo[700];
     return Scaffold(
